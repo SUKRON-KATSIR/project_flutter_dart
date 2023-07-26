@@ -1,6 +1,6 @@
-# edspert_flutter_16
+# flutter
 
-Tugas dari Bootcamp Flutter Batch 16 - EDSPERT BOOTcamp
+Tugas 1
 
 ## Screenshoot
 Screenshoot aplikasi:
