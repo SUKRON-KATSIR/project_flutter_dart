@@ -25,10 +25,10 @@ class Resume extends StatelessWidget {
             child: Column(
               children: [
                 const CircleAvatar(
-                  backgroundColor: Colors.grey,
-                  radius: 112,
+                  backgroundColor: Color.fromARGB(255, 82, 81, 81),
+                  radius: 90,
                   child: CircleAvatar(
-                    radius: 110,
+                    radius: 85,
                     backgroundColor: Colors.white,
                     backgroundImage: AssetImage('assets/sukron.png'),
                   ),
@@ -36,18 +36,18 @@ class Resume extends StatelessWidget {
                 const Text(
                   'SUKRON KATSIR',
                   style: TextStyle(
-                    color: Colors.indigo,
+                    color: Color.fromARGB(255, 0, 0, 0),
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: 18,
                   ),
                 ),
                 const Text(
-                  'Web Developer',
+                  'Android Developer',
                   style: TextStyle(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
-                const SizedBox(height: 5),
+                const SizedBox(height: 4),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -57,17 +57,23 @@ class Resume extends StatelessWidget {
                       icon: FontAwesomeIcons.linkedin,
                       bgColor: Colors.blue.shade900,
                     ),
-                    const SizedBox(width: 5),
+                    const SizedBox(width: 4),
                     SocialButton(
                       url: 'https://wa.me/6287771162011',
                       icon: FontAwesomeIcons.whatsapp,
                       bgColor: Colors.green.shade500,
                     ),
-                    const SizedBox(width: 5),
+                    const SizedBox(width: 4),
                     SocialButton(
                       url: 'https://www.instagram.com/sukron_katsir',
                       icon: FontAwesomeIcons.instagram,
-                      bgColor: Colors.orange.shade900,
+                      bgColor: Color.fromARGB(255, 227, 23, 145),
+                    ),
+                    const SizedBox(width: 4),
+                    SocialButton(
+                      url: 'https://twitter.com/sukron_katsir',
+                      icon: FontAwesomeIcons.twitter,
+                      bgColor: Color(0xFF2BABDA),
                     ),
                   ],
                 ),
@@ -75,12 +81,44 @@ class Resume extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 30),
+          const SizedBox(height: 5),
 
           // Edu
           const Center(
             child: Text(
               "Education",
+              style: TextStyle(
+                color: Colors.indigo,
+                fontSize: 18,
+              ),
+            ),
+          ),
+          const Divider(color: Colors.indigo),
+          const Column(
+            children: [
+              TimelineContent(
+                title: 'UNIVERSITAS MADURA',
+                description: 'TEKNIK INFORMATIKA',
+                subdescription: '2020 - Present',
+                isFirst: true,
+                isLast: false,
+              ),
+              TimelineContent(
+                title: 'SMA NEGERI 2 PAMEKASAN',
+                description: 'Ilmu Pengetahuan Sosial',
+                subdescription: '2014 - 2017',
+                isFirst: false,
+                isLast: true,
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 5),
+
+          // Edu
+          const Center(
+            child: Text(
+              "Skills",
               style: TextStyle(
                 color: Colors.indigo,
                 fontSize: 18,
@@ -101,56 +139,29 @@ class Resume extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'UNIVERSITAS MADURA',
+                            'C++, Php, Python, Dart',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text('Teknik Informatika'),
+                          Text(
+                            'Flask, CodeIgniter 4, Laravel',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                     ),
                     beforeLineStyle:
                         const LineStyle(color: Colors.indigo, thickness: 2),
-                    isLast: true,
+                    isLast: false,
                     indicatorStyle: const IndicatorStyle(
                       color: Colors.indigo,
                       width: 15,
                     ),
                   ),
                 ),
-              ),
-            ],
-          ),
-
-          const SizedBox(height: 24),
-
-          // Edu
-          const Center(
-            child: Text(
-              "Job Experience",
-              style: TextStyle(
-                color: Colors.indigo,
-                fontSize: 18,
-              ),
-            ),
-          ),
-          const Divider(color: Colors.indigo),
-          const Column(
-            children: [
-              TimelineContent(
-                title: 'SISTEM CERDAS',
-                description: 'Artificial Intelligence',
-                subdescription: '2020 - Present',
-                isFirst: true,
-                isLast: false,
-              ),
-              TimelineContent(
-                title: 'SISTEM CERDAS',
-                description: 'Computer Vision',
-                subdescription: '2020 - 2021',
-                isFirst: false,
-                isLast: true,
               ),
             ],
           ),

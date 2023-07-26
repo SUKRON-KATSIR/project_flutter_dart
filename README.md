@@ -1,8 +1,8 @@
 # edspert_flutter_16
 
-Project ini merupakan Tugas dari Bootcamp Flutter Batch 16 - Edspert ID
+Tugas dari Bootcamp Flutter Batch 16 - EDSPERT BOOTcamp
 
 ## Screenshoot
-Berikut ini tampilan screenshoot dari aplikasi yang dibuat:
+Screenshoot aplikasi:
 
-![alt text](./assets/sc.png "Title")
+![alt text](./assets/output.jpg "Title")
